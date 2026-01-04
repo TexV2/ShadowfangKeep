@@ -1,2 +1,6 @@
-﻿  main.cpp
-  ShadowfangKeep.vcxproj -> C:\Users\Carl Everman\source\repos\ShadowfangKeepRepo\ShadowfangKeep\x64\Debug\ShadowfangKeep.exe
+﻿  Game.cpp
+  MainMenu.cpp
+  Menu.cpp
+  Generating Code...
+C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\MainMenu.cpp(43,1): warning C4715: 'MainMenu::getUserChoice': not all control paths return a value
+  ShadowfangKeep.vcxproj -> C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\x64\Debug\ShadowfangKeep.exe
