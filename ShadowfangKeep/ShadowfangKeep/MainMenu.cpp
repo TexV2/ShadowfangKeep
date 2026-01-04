@@ -38,6 +38,6 @@ MenuAction MainMenu::getUserChoice()
 	else
 	{
 		std::cout << "Invalid choice. Please try again." << std::endl;
-		getUserChoice();
+		return getUserChoice();
 	}
 }

@@ -5,6 +5,7 @@ enum class GameState
 	CHARACTERSELECTION,
 	EXPLORATION,
 	PAUSED,
+	COMBAT,
 	GAME_OVER
 };
 
@@ -20,7 +21,7 @@ public:
 	void Update();
 	void Shutdown();
 	void ChangeState(GameState newState);
-	GameState getState();
+	GameState getState() const;
 
 	//Menus
 	//Main Menu

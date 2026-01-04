@@ -1,5 +1,6 @@
 #include "game.h"
 #include "MainMenu.h"
+#include <memory>
 #include <iostream>
 
 /*Game Management*/
@@ -23,7 +24,7 @@ void Game::Update()
         updateMainMenu();
         break;
 	case GameState::CHARACTERSELECTION:
-        //updateCharacterSelection();
+		updateCharacterSelection();
 		break;
 
     case GameState::EXPLORATION:
@@ -33,6 +34,10 @@ void Game::Update()
     case GameState::PAUSED:
         updatePause();
         break;
+
+    case GameState::COMBAT:
+        updateCombat();
+		break;
 
     case GameState::GAME_OVER:
         // do nothing, main loop will exit
@@ -49,7 +54,7 @@ void Game::ChangeState(GameState newState)
 	std::cout << "Game state changed." << std::endl;
 }
 
-GameState Game::getState()
+GameState Game::getState() const
 {
 	return currentState;
 }
@@ -57,19 +62,31 @@ GameState Game::getState()
 /*Menus*/
 void Game::updateMainMenu()
 {
-    auto mainMenu = std::make_unique<MainMenu>();
-    mainMenu->displayOptions();
-    MenuAction action = mainMenu->getUserChoice();
-    if (MenuAction::START_NEW_GAME == action)
-    {
+    MainMenu mainMenu;
+    mainMenu.displayOptions();
+    MenuAction action = mainMenu.getUserChoice();
+    switch (action) {
+        case MenuAction::START_NEW_GAME:
         ChangeState(GameState::CHARACTERSELECTION);
+		break;
+        case MenuAction::LOAD_GAME:
+            // Implement load game logic here
+            break;
+        case MenuAction::OPTIONS:
+            // Implement options logic here
+            break;
+        case MenuAction::EXIT_GAME:
+            ChangeState(GameState::GAME_OVER);
+            break;
+        default:
+			break;
     }
-    else if (MenuAction::EXIT_GAME == action)
-    {
-        ChangeState(GameState::GAME_OVER);
-	}
 }
 
+void Game::updatePause()
+{
+
+}
 
 void Game::updateCharacterSelection()
 {

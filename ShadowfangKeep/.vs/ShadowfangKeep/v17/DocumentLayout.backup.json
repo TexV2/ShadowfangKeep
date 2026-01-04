@@ -3,12 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\CharacterMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\CharacterMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\CharacterMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\CharacterMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -17,18 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Menu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{26660309-30ED-4D89-8262-C8FD773391F6}|ShadowfangKeep\\ShadowfangKeep.vcxproj|solutionrelative:ShadowfangKeep\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Carl Everman\\Downloads\\Solution(1)\\Car.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -41,11 +73,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Car.h",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Downloads\\Solution(1)\\Car.h",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\Solution(1)\\Car.h",
@@ -54,38 +86,141 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-04T16:30:09.332Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Warrior.cpp",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Warrior.cpp",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\Warrior.cpp",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Warrior.cpp",
+              "RelativeToolTip": "ShadowfangKeep\\Warrior.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-04T20:00:30.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Warrior.h",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Warrior.h",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\Warrior.h",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Warrior.h",
+              "RelativeToolTip": "ShadowfangKeep\\Warrior.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-04T20:00:22.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Player.cpp",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\Player.cpp",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Player.cpp",
+              "RelativeToolTip": "ShadowfangKeep\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-04T18:40:53.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Player.h",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Player.h",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\Player.h",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Player.h",
+              "RelativeToolTip": "ShadowfangKeep\\Player.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-04T18:40:48.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Entity.cpp",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Entity.cpp",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\Entity.cpp",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Entity.cpp",
+              "RelativeToolTip": "ShadowfangKeep\\Entity.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-04T18:40:24.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Entity.h",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\Entity.h",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Entity.h",
+              "RelativeToolTip": "ShadowfangKeep\\Entity.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-04T18:40:19.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CharacterMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\CharacterMenu.cpp",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\CharacterMenu.cpp",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\CharacterMenu.cpp",
+              "RelativeToolTip": "ShadowfangKeep\\CharacterMenu.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-04T18:02:53.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CharacterMenu.h",
+              "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\CharacterMenu.h",
+              "RelativeDocumentMoniker": "ShadowfangKeep\\CharacterMenu.h",
+              "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\CharacterMenu.h",
+              "RelativeToolTip": "ShadowfangKeep\\CharacterMenu.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-04T18:02:14.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "MainMenu.cpp",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.cpp",
               "RelativeDocumentMoniker": "ShadowfangKeep\\MainMenu.cpp",
               "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.cpp",
               "RelativeToolTip": "ShadowfangKeep\\MainMenu.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-04T16:44:17.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "MainMenu.h",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.h",
               "RelativeDocumentMoniker": "ShadowfangKeep\\MainMenu.h",
               "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\MainMenu.h",
               "RelativeToolTip": "ShadowfangKeep\\MainMenu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-04T16:44:10.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "Menu.cpp",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Menu.cpp",
               "RelativeDocumentMoniker": "ShadowfangKeep\\Menu.cpp",
@@ -98,52 +233,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Menu.h",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Menu.h",
               "RelativeDocumentMoniker": "ShadowfangKeep\\Menu.h",
               "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Menu.h",
               "RelativeToolTip": "ShadowfangKeep\\Menu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-04T16:38:20.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Game.h",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.h",
               "RelativeDocumentMoniker": "ShadowfangKeep\\Game.h",
               "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.h",
               "RelativeToolTip": "ShadowfangKeep\\Game.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-01-04T16:16:39.441Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.cpp",
               "RelativeDocumentMoniker": "ShadowfangKeep\\Game.cpp",
               "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\Game.cpp",
               "RelativeToolTip": "ShadowfangKeep\\Game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-04T16:16:28.116Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\main.cpp",
               "RelativeDocumentMoniker": "ShadowfangKeep\\main.cpp",
               "ToolTip": "C:\\Users\\Carl Everman\\Arbete\\Programmering\\source\\repos\\ShadowfangKeepRepo\\ShadowfangKeep\\ShadowfangKeep\\main.cpp",
               "RelativeToolTip": "ShadowfangKeep\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-04T16:13:01.264Z",
               "EditorCaption": ""
