@@ -39,3 +39,20 @@
 
 # debug information files
 *.dwo
+
+# Visual Studio
+.vs/
+ipch/
+*.ipch
+
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+
+
+# Build folders
+Debug/
+Release/
+x64/
+x86/
