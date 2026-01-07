@@ -8,9 +8,7 @@ Entity::Entity(const std::string& name, int hp, int damage, int defense)
 	this->maxHP = hp;
 	this->attack = damage;
 	this->defense = defense;
-}
-Entity::~Entity()
-{
+	this->currentHP = hp;
 }
 //Combat
 int Entity::takeDamage(int rawDamage)
@@ -30,7 +28,7 @@ bool Entity::isAlive() const
 	return currentHP > 0;
 }
 //Info
-std::string Entity::toString()
+std::string Entity::toString() const
 {
 	return "Name: " + name + "\nHP: " + std::to_string(currentHP) + "/" + std::to_string(maxHP) + "\nAttack: " + std::to_string(attack) + "\nDefense: " + std::to_string(defense);
 }

@@ -5,13 +5,14 @@ class Entity
 {
 protected:
 	std::string name;
+	std::string asciiArt;
 	int maxHP;
 	int currentHP;
 	int defense;
 	int attack;
 public:
 	Entity(const std::string& name, int hp, int attack, int defense);
-	~Entity();
+	virtual ~Entity() = default;
 	//Combat
 	virtual int takeDamage(int rawDamage);
 	virtual int dealDamage() const;
@@ -19,7 +20,8 @@ public:
 	bool isAlive() const;
 
 	//Info
-	virtual std::string toString();
+	virtual std::string toString() const;
+	std::string printArt() const { return asciiArt; }
 
 	//Getters
 	const std::string getName() const;

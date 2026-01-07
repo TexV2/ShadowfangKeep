@@ -1,12 +1,16 @@
 #pragma once
 enum class MenuAction {
     None,
+	//Main Menu Actions
     BACK,
     EXIT_GAME,
     START_NEW_GAME,
     LOAD_GAME,
     OPEN_INVENTORY,
-    OPTIONS
+    OPTIONS,
+	//Character Selection Actions
+    WARRIOR,
+    RANGER
 };
 
 class baseMenu

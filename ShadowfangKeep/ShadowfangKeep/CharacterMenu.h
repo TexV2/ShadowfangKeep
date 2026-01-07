@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include "Menu.h"
 
 class CharacterMenu : public baseMenu
@@ -11,3 +10,4 @@ public:
 	virtual void displayOptions() override;
 	virtual MenuAction getUserChoice() override;
 };
+

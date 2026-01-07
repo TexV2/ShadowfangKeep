@@ -1,4 +1,5 @@
 #pragma once
+#include <memory>
 enum class GameState
 {
 	MAIN_MENU,
@@ -9,10 +10,13 @@ enum class GameState
 	GAME_OVER
 };
 
+class Player;
+
 class Game
 {
 private:
 	GameState currentState;
+	std::unique_ptr<Player> player;
 public:
 	/*Management*/
 	Game();

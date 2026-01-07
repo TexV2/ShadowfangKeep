@@ -12,7 +12,7 @@ public:
 	void gainExperience(int exp);
 	virtual void levelUp();
 	//Info
-	virtual std::string toString() override;
+	virtual std::string toString();
 	//Getters
 	int getLevel() const;
 	int getExperience() const;
