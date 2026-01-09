@@ -1,9 +1,12 @@
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\CharacterMenu.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\CharacterMenu.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\Entity.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\Entity.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\Game.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\Game.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\main.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\main.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\MainMenu.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\MainMenu.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\Menu.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\Menu.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\Player.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\Player.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\Room.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\Room.obj
-C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\Warrior.cpp;C:\Users\Carl Everman\Arbete\Programmering\source\repos\ShadowfangKeepRepo\ShadowfangKeep\ShadowfangKeep\x64\Debug\Warrior.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\CharacterMenu.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\CharacterMenu.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\EmptyRoom.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\EmptyRoom.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Entity.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Entity.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\ExplorationMenu.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\ExplorationMenu.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Game.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Game.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\main.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\main.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\MainMenu.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\MainMenu.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Menu.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Menu.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Player.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Player.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Room.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Room.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Warrior.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Warrior.obj
+C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\Worldbuilder.cpp;C:\Users\carl\projects\ShadowfangKeep\ShadowfangKeep\ShadowfangKeep\x64\Debug\Worldbuilder.obj

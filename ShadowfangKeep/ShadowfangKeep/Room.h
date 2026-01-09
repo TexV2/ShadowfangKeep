@@ -5,13 +5,23 @@ using std::vector;
 class Room
 {
 private:
-	std::string description;
-	bool hasEnemy;
-	vector <Room> paths;
+	std::string descriptionEntry;
+	std::string descriptionExit;
+	std::string name;
+	bool visited;
+	bool isRoomEmpty;
+	vector <Room*> paths;
+	
 public:
-	Room();
-	~Room();
-	void Encouter(Player* p);
-	Room choosePath(int i);
+	Room(std::string EntryDescription, std::string ExitDescription, std::string name);
+	virtual ~Room() = 0;
+	virtual void enter(Player& player) = 0;
+	virtual std::string getEntry();
+	virtual std::string getExit();
+
+	bool getIsRoomEmpty() const;
+	void setIsRoomEmpty(bool isEmpty);
+	void addConnection(Room* room);
+	const std::vector<Room*>& getConnections() const;
 	private:
 };

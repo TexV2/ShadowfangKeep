@@ -3,13 +3,15 @@
 #include "MainMenu.h"
 #include "CharacterMenu.h"
 #include "Warrior.h"
+#include "ExplorationMenu.h"
 #include <memory>
 #include <iostream>
 
 /*Game Management*/
 Game::Game() : currentState(GameState::MAIN_MENU)
 {
-
+	worldBuilder = Worldbuilder();
+	rooms = worldBuilder.buildWorld();
 }
 Game::~Game()
 {
@@ -113,6 +115,25 @@ void Game::updateCharacterSelection()
 /*Gameplay*/
 void Game::updateExploration()
 {
+	rooms[currentRoomIndex]->enter(*player);
+	ExplorationMenu exploreMenu(true);
+	exploreMenu.displayOptions();
+	MenuAction action = exploreMenu.getUserChoice();
+    switch (action) {
+    case MenuAction::CONTINUE:
+        // Move to the next room
+        currentRoomIndex++;
+        break;
+    case MenuAction::SEARCH_ROOM:
+        // Implement search room logic here
+        break;
+    case MenuAction::OPEN_INVENTORY:
+        // Implement inventory logic here
+        break;
+    case MenuAction::OPEN_MENU:
+        ChangeState(GameState::PAUSED);
+        break;
+    }
 }
 
 void Game::updateCombat()

@@ -10,7 +10,13 @@ enum class MenuAction {
     OPTIONS,
 	//Character Selection Actions
     WARRIOR,
-    RANGER
+    RANGER,
+	//Exploration Actions
+	CONTINUE,
+	SEARCH_ROOM,
+	OPEN_MENU,
+
+
 };
 
 class baseMenu

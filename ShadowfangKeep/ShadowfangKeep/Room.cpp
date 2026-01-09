@@ -1,34 +1,35 @@
 #include "Room.h"
-Room::Room()
+Room::Room(std::string EntryDescription, std::string ExitDescription, std::string name) : visited(false)
 {
-	description = "A dark and eerie room.";
-	hasEnemy = false;
+	this->isRoomEmpty = false;
+	this->name = name;
+	this->descriptionEntry = EntryDescription;
+	this->descriptionExit = ExitDescription;
 }
 Room::~Room()
 {
 }
-void Room::Encouter(Player* p)
+std::string Room::getEntry()
 {
-	// Placeholder for encounter logic
-	if (hasEnemy)
-	{
-		std::cout << "An enemy appears!" << std::endl;
-		// Combat logic would go here
-	}
-	else
-	{
-		std::cout << "The room is empty." << std::endl;
-	}
+	return descriptionEntry;
 }
-Room Room::choosePath(int i)
+std::string Room::getExit()
 {
-	if (i >= 0 && i < paths.size())
-	{
-		return paths[i];
-	}
-	else
-	{
-		std::cout << "Invalid path choice." << std::endl;
-		return *this; // Return current room if invalid
-	}
+	return descriptionExit;
+}
+void Room::addConnection(Room* room)
+{
+	paths.push_back(room);
+}
+const std::vector<Room*>& Room::getConnections() const
+{
+	return paths;
+}
+bool Room::getIsRoomEmpty() const
+{
+	return isRoomEmpty;
+}
+void Room::setIsRoomEmpty(bool isEmpty)
+{
+	isRoomEmpty = isEmpty;
 }
