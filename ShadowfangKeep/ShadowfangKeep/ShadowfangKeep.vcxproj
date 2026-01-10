@@ -124,10 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CharacterMenu.cpp" />
+    <ClCompile Include="CombatRoom.cpp" />
     <ClCompile Include="EmptyRoom.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="ExplorationMenu.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="LootRoom.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Menu.cpp" />
@@ -138,10 +140,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CharacterMenu.h" />
+    <ClInclude Include="CombatRoom.h" />
     <ClInclude Include="EmptyRoom.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="ExplorationMenu.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="LootRoom.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Player.h" />

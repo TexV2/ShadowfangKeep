@@ -10,7 +10,6 @@ private:
 	std::string name;
 	bool visited;
 	bool isRoomEmpty;
-	vector <Room*> paths;
 	
 public:
 	Room(std::string EntryDescription, std::string ExitDescription, std::string name);
@@ -21,7 +20,4 @@ public:
 
 	bool getIsRoomEmpty() const;
 	void setIsRoomEmpty(bool isEmpty);
-	void addConnection(Room* room);
-	const std::vector<Room*>& getConnections() const;
-	private:
 };

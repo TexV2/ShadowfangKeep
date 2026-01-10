@@ -17,14 +17,6 @@ std::string Room::getExit()
 {
 	return descriptionExit;
 }
-void Room::addConnection(Room* room)
-{
-	paths.push_back(room);
-}
-const std::vector<Room*>& Room::getConnections() const
-{
-	return paths;
-}
 bool Room::getIsRoomEmpty() const
 {
 	return isRoomEmpty;
