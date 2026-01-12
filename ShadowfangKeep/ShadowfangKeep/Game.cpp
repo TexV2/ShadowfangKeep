@@ -6,6 +6,9 @@
 #include "ExplorationMenu.h"
 #include <memory>
 #include <iostream>
+#include "EnemyRoom.h"
+#include "LootRoom.h"
+#include <limits>
 
 /*Game Management*/
 Game::Game() : currentState(GameState::MAIN_MENU)
@@ -45,7 +48,6 @@ void Game::Update()
 		break;
 
     case GameState::GAME_OVER:
-        // do nothing, main loop will exit
         break;
     }
 }
@@ -64,6 +66,48 @@ GameState Game::getState() const
 	return currentState;
 }
 
+int Game::getIndex() const
+{
+	return this->currentRoomIndex;
+}
+
+void Game::setIndex(int index)
+{
+	this->currentRoomIndex = index;
+}
+
+bool Game::getIsRoomEmpty() const
+{
+    return this->rooms[currentRoomIndex]->getIsRoomEmpty();
+}
+
+void Game::setIsRoomEmpty(bool isEmpty)
+{
+    this->rooms[currentRoomIndex]->setIsRoomEmpty(isEmpty);
+}
+
+void Game::makePlayer(std::string name, int playerClass)
+{
+    if (playerClass == 1) // Warrior
+    {
+        player = std::make_unique<Warrior>(name);
+	}
+}
+
+void Game::saveGame()
+{ 
+    saveSystem = std::make_unique<SaveSystem>(currentRoomIndex, rooms[currentRoomIndex]->getIsRoomEmpty(), player.get());
+	saveSystem->saveGame();
+}
+void Game::loadGame()
+{
+    saveSystem = std::make_unique<SaveSystem>();
+    Loading data = saveSystem->loadGame();
+    makePlayer(data.playerName, data.playerClass);
+	currentRoomIndex = data.roomIndex;
+	this->rooms[currentRoomIndex]->setIsRoomEmpty(data.isRoomEmpty);
+}
+
 /*Menus*/
 void Game::updateMainMenu()
 {
@@ -75,7 +119,8 @@ void Game::updateMainMenu()
         ChangeState(GameState::CHARACTERSELECTION);
 		break;
         case MenuAction::LOAD_GAME:
-            // Implement load game logic here
+			loadGame();
+            ChangeState(GameState::EXPLORATION);
             break;
         case MenuAction::OPTIONS:
             // Implement options logic here
@@ -104,7 +149,7 @@ void Game::updateCharacterSelection()
     std::getline(std::cin, name);
     switch (action) {
     case MenuAction::WARRIOR:
-        player = std::make_unique<Warrior>(name);
+		makePlayer(name, 1);
         break;
     }
 	  std::cout << "Character Created!" << std::endl;
@@ -113,29 +158,107 @@ void Game::updateCharacterSelection()
 }
 
 /*Gameplay*/
+auto printRoomSummary = [&](Room& r)
+    {
+        std::cout << "There is " << (r.getIsRoomEmpty() ? "nothing" : "something") << " in the room\n";
+    };
 void Game::updateExploration()
 {
-	rooms[currentRoomIndex]->enter(*player);
-	ExplorationMenu exploreMenu(true);
-	exploreMenu.displayOptions();
+    if (rooms[currentRoomIndex]->getVisited() == false)
+    { 	
+        rooms[currentRoomIndex]->enter(*player);
+		rooms[currentRoomIndex]->setVisited(true);
+        if (rooms[currentRoomIndex]->getIsRoomEmpty() == false)
+        {
+            if (rooms[currentRoomIndex]->getHasEnemy() == true)
+            {
+                ChangeState(GameState::COMBAT);
+                return;
+            }
+		}
+    }
+    ExplorationMenu exploreMenu;
+    exploreMenu.displayOptions();
 	MenuAction action = exploreMenu.getUserChoice();
     switch (action) {
     case MenuAction::CONTINUE:
-        // Move to the next room
+        if (currentRoomIndex + 1 >= rooms.size())
+        {
+            std::cout << "You have reached the end of the game. Congratulations!" << std::endl;
+            ChangeState(GameState::GAME_OVER);
+            return;
+		}
         currentRoomIndex++;
         break;
     case MenuAction::SEARCH_ROOM:
-        // Implement search room logic here
+        printRoomSummary(*rooms[currentRoomIndex]);
+		searchRoom(rooms[currentRoomIndex].get());
         break;
     case MenuAction::OPEN_INVENTORY:
-        // Implement inventory logic here
+		openInventory();
         break;
-    case MenuAction::OPEN_MENU:
+    case MenuAction::SAVE_GAME:
+        saveGame();
+		break;
+    case MenuAction::EXIT_GAME:
         ChangeState(GameState::PAUSED);
         break;
     }
 }
 
+void Game::searchRoom(Room* currentRoom)
+{
+    //if (auto lootRoom = dynamic_cast<LootRoom*>(rooms[currentRoomIndex].get()))
+    if (auto lootRoom = dynamic_cast<LootRoom*>(currentRoom))
+    {
+        lootRoom->searchRoom(*player);
+        currentRoom->setIsRoomEmpty(true);
+    }
+}
+
+void Game::openInventory()
+{
+    while (true)
+    {
+        std::cout << player->toString() << std::endl;
+        std::cout << "Inventory Items:\n" << player->getInventoryItems() << std::endl;
+		std::cout << "Enter the name of the item to equip it, or type 'exit' to close the inventory: ";
+        std::string itemName;
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::getline(std::cin, itemName);
+        if (itemName == "exit")
+        {
+            break;
+        }
+		player->equipItem(itemName, *player);
+    }
+}
+
 void Game::updateCombat()
 {
+	currentEnemy = dynamic_cast<EnemyRoom*>(rooms[currentRoomIndex].get())->releaseEnemy();
+	while (player->isAlive() && rooms[currentRoomIndex]->getHasEnemy() == true)
+    {
+        std::cout << "1. Attack \n2. Defend\n";
+		int choice;
+		std::cin >> choice;
+        if (choice == 1)
+        {
+            int damageDealt = player->dealDamage(*currentEnemy);
+			std::cout << "You attack " << currentEnemy->getName() << " for " << damageDealt << " damage!\n";
+        }
+        if (currentEnemy->isAlive())
+        {
+            currentEnemy->takeTurn(*player);
+        }
+        else
+        {
+            std::cout << "You have defeated the " << currentEnemy->getName() << "!\n";
+			std::cout << rooms[currentRoomIndex]->getExit() << std::endl;
+            rooms[currentRoomIndex]->setHasEnemy(false);
+            rooms[currentRoomIndex]->setIsRoomEmpty(true);
+            currentEnemy.reset();
+            ChangeState(GameState::EXPLORATION);
+		}
+	}
 }

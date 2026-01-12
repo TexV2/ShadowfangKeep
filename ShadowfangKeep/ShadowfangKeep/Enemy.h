@@ -4,12 +4,14 @@
 class Enemy : public Entity
 {
 private:
+	std::string description;
 
 public:
-	Enemy(const std::string& name, int hp, int attack, int defense);
+	Enemy(std::string description, std::string name, int hp, int attack, int defense);
 	virtual ~Enemy() = 0;
 
 	void takeTurn(Player &player);
 	// Info
 	virtual std::string toString();
+	std::string getDescription() const;
 };

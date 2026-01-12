@@ -19,9 +19,10 @@ int Entity::takeDamage(int rawDamage)
 		currentHP = 0;
 	return damageTaken;
 }
-int Entity::dealDamage() const
+int Entity::dealDamage(Entity &entity) const
 {
-	return attack;
+	entity.takeDamage(attack);
+	return this->attack - entity.getDefense();
 }
 bool Entity::isAlive() const
 {

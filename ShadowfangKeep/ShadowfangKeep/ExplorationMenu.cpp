@@ -1,8 +1,7 @@
 #include "ExplorationMenu.h"
 #include <iostream>
-ExplorationMenu::ExplorationMenu(bool isRoomEmpty)
+ExplorationMenu::ExplorationMenu()
 {
-	this->isRoomEmpty = isRoomEmpty;
 }
 ExplorationMenu::~ExplorationMenu()
 {
@@ -11,12 +10,10 @@ void ExplorationMenu::displayOptions()
 {
 	std::cout << "Exploration Menu:\n";
 	std::cout << "1. Continue\n";
-	if (isRoomEmpty = false)
-	{
-		std::cout << "2. Search the room\n";
-	}
+	std::cout << "2. Search the room\n";
 	std::cout << "3. View Inventory\n";
-	std::cout << "q. Menu\n";
+	std::cout << "4. Save\n";
+	std::cout << "q. Quit\n";
 }
 
 MenuAction ExplorationMenu::getUserChoice()
@@ -29,19 +26,13 @@ MenuAction ExplorationMenu::getUserChoice()
 	case '1':
 		return MenuAction::CONTINUE;
 	case '2':
-		if (isRoomEmpty = false)
-		{
-			return MenuAction::SEARCH_ROOM;
-		}
-		else
-		{
-			std::cout << "Invalid choice. Please try again.\n";
-			return getUserChoice();
-		}
+		return MenuAction::SEARCH_ROOM;
 	case '3':
 		return MenuAction::OPEN_INVENTORY;
+	case '4':
+		return MenuAction::SAVE_GAME;
 	case 'q':
-		return MenuAction::OPEN_MENU;
+		return MenuAction::EXIT_GAME;
 	default:
 		std::cout << "Invalid choice. Please try again.\n";
 		return getUserChoice();

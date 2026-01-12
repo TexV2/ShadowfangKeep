@@ -123,34 +123,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Armor.cpp" />
     <ClCompile Include="CharacterMenu.cpp" />
-    <ClCompile Include="CombatRoom.cpp" />
+    <ClCompile Include="CombatSystem.cpp" />
     <ClCompile Include="EmptyRoom.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyRoom.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="ExplorationMenu.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Helmet.cpp" />
+    <ClCompile Include="Item.cpp" />
     <ClCompile Include="LootRoom.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Room.cpp" />
+    <ClCompile Include="SaveSystem.cpp" />
     <ClCompile Include="Warrior.cpp" />
+    <ClCompile Include="Werewolf.cpp" />
     <ClCompile Include="Worldbuilder.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Armor.h" />
     <ClInclude Include="CharacterMenu.h" />
-    <ClInclude Include="CombatRoom.h" />
+    <ClInclude Include="CombatSystem.h" />
     <ClInclude Include="EmptyRoom.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyRoom.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="ExplorationMenu.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Helmet.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="LootRoom.h" />
     <ClInclude Include="MainMenu.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Room.h" />
+    <ClInclude Include="SaveSystem.h" />
     <ClInclude Include="Warrior.h" />
+    <ClInclude Include="Werewolf.h" />
     <ClInclude Include="Worldbuilder.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -15,7 +15,7 @@ public:
 	virtual ~Entity() = default;
 	//Combat
 	virtual int takeDamage(int rawDamage);
-	virtual int dealDamage() const;
+	virtual int dealDamage(Entity &entity) const;
 
 	bool isAlive() const;
 

@@ -8,6 +8,7 @@ enum class MenuAction {
     LOAD_GAME,
     OPEN_INVENTORY,
     OPTIONS,
+	SAVE_GAME,
 	//Character Selection Actions
     WARRIOR,
     RANGER,

@@ -16,6 +16,8 @@ void MainMenu::displayOptions()
 }
 MenuAction MainMenu::getUserChoice()
 {
+	while (true)
+	{
 	int choice;
 	std::cout << "Enter your choice: ";
 	std::cin >> choice;
@@ -40,4 +42,6 @@ MenuAction MainMenu::getUserChoice()
 		std::cout << "Invalid choice. Please try again." << std::endl;
 		return getUserChoice();
 	}
+	}
+
 }

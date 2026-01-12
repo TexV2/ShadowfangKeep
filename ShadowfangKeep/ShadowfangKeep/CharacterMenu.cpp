@@ -17,31 +17,33 @@ MenuAction CharacterMenu::getUserChoice()
 {
 	int choice;
 	std::cout << "Choose your class: ";
-	std::cin >> choice;
-	if (choice == 1)
+	while (true)
 	{
-		Warrior playerCharacter("...");
-		std::cout << "You have selected the Warrior class!" << std::endl;
-		std::cout << "Warrior Stats:" << std::endl;
-		std::cout << playerCharacter.printArt() << std::endl;
-		std::cout << playerCharacter.toString() << std::endl;
-		std::cout << "Confirm selection? (y/n): ";
-		char confirm;
-		std::cin >> confirm;
-
-		if (tolower(confirm) == 'y')
+		std::cin >> choice;
+		if (choice == 1)
 		{
-			return MenuAction::WARRIOR;
+			Warrior playerCharacter("...");
+			std::cout << "You have selected the Warrior class!" << std::endl;
+			std::cout << "Warrior Stats:" << std::endl;
+			std::cout << playerCharacter.printArt() << std::endl;
+			std::cout << playerCharacter.toString() << std::endl;
+			std::cout << "Confirm selection? (y/n): ";
+			char confirm;
+			std::cin >> confirm;
+
+			if (tolower(confirm) == 'y')
+			{
+				return MenuAction::WARRIOR;
+			}
+			else
+			{
+				return getUserChoice();
+			}
 		}
 		else
 		{
-			return getUserChoice();
+			std::cout << "Invalid choice. Please try again." << std::endl;
 		}
-	}
-	else
-	{
-		std::cout << "Invalid choice. Please try again." << std::endl;
-		return getUserChoice();
 	}
 	
 }
