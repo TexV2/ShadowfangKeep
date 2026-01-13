@@ -221,16 +221,20 @@ void Game::openInventory()
     while (true)
     {
         std::cout << player->toString() << std::endl;
-        std::cout << "Inventory Items:\n" << player->getInventoryItems() << std::endl;
-		std::cout << "Enter the name of the item to equip it, or type 'exit' to close the inventory: ";
+        std::cout << "Inventory Items:\n"
+            << player->getInventoryItems() << std::endl;
+
+        std::cout << "Enter the name of the item to equip it, or type 'exit' to close the inventory: ";
+
         std::string itemName;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         std::getline(std::cin, itemName);
+
         if (itemName == "exit")
         {
             break;
         }
-		player->equipItem(itemName, *player);
+
+        player->equipItem(itemName, *player);
     }
 }
 
