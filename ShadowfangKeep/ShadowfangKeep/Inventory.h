@@ -33,7 +33,7 @@ public:
             }
         }
 
-        // Om slot redan är equipad ? byt
+        // Om slot redan är equipad byt ut
         for (size_t i = 0; i < equippedItems.size(); ++i)
         {
             if (equippedItems[i]->getSlot() == item->getSlot())
@@ -55,7 +55,7 @@ public:
             }
         }
 
-        // Annars: equippa nytt
+		// Bara equipapa om slot är tom
         equippedItems.push_back(item);
         item->equipItem(player);
 

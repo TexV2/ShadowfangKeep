@@ -96,16 +96,32 @@ void Game::makePlayer(std::string name, int playerClass)
 
 void Game::saveGame()
 { 
-    saveSystem = std::make_unique<SaveSystem>(currentRoomIndex, rooms[currentRoomIndex]->getIsRoomEmpty(), player.get());
-	saveSystem->saveGame();
+    try
+    {
+        saveSystem = std::make_unique<SaveSystem>(currentRoomIndex, rooms[currentRoomIndex]->getIsRoomEmpty(), player.get());
+        saveSystem->saveGame();
+		std::cout << "Game has been saved!" << std::endl;
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << "Error: " << e.what() << std::endl;
+	}
 }
 void Game::loadGame()
 {
-    saveSystem = std::make_unique<SaveSystem>();
-    Loading data = saveSystem->loadGame();
-    makePlayer(data.playerName, data.playerClass);
-	currentRoomIndex = data.roomIndex;
-	this->rooms[currentRoomIndex]->setIsRoomEmpty(data.isRoomEmpty);
+    try
+    {
+        saveSystem = std::make_unique<SaveSystem>();
+        Loading data = saveSystem->loadGame();
+        makePlayer(data.playerName, data.playerClass);
+        currentRoomIndex = data.roomIndex;
+        this->rooms[currentRoomIndex]->setIsRoomEmpty(data.isRoomEmpty);
+		std::cout << "Game has been loaded!" << std::endl;
+    }
+    catch (const std::exception& e)
+    {
+        std::cerr << "Error: " << e.what() << std::endl;
+	}
 }
 
 /*Menus*/
@@ -201,7 +217,7 @@ void Game::updateExploration()
         saveGame();
 		break;
     case MenuAction::EXIT_GAME:
-        ChangeState(GameState::PAUSED);
+		ChangeState(GameState::GAME_OVER);
         break;
     }
 }

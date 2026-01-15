@@ -1,5 +1,6 @@
 #include "SaveSystem.h"
 #include "Game.h"
+#include <stdexcept>
 SaveSystem::SaveSystem(int roomIndex, bool isRoomEmpty, Player* player)
 {
 	this->player = player;
@@ -24,7 +25,11 @@ SaveSystem::~SaveSystem()
 }
 void SaveSystem::saveGame()
 {
-	saveFile.open("savefile.sav", std::ios::out);
+	saveFile.open("savefile.txt", std::ios::out);
+	if (!saveFile.is_open())
+	{
+		throw std::runtime_error("Save file failed to open.");
+	}
 	if (saveFile.is_open())
 	{
 		saveFile << roomIndex << "\n" << player->getName() << "\n" << player->getPlayerClass() << "\n" << isRoomEmpty;
@@ -33,7 +38,11 @@ void SaveSystem::saveGame()
 }
 Loading SaveSystem::loadGame()
 {
-	saveFile.open("savefile.sav", std::ios::in);
+	saveFile.open("savefile.txt", std::ios::in);
+	if (!saveFile.is_open())
+	{
+		throw std::runtime_error("Failed to open save file.");
+	}
 	if (saveFile.is_open())
 	{
 		std::string line;
